@@ -1,0 +1,34 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "My Profile" # the name of your site, e.g. ACME Corp.
+postcss:
+  cache: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      toc: true
+  - scope:
+      path: '_posts'
+      type: posts
+    values:
+      layout: post
+      permalink: /:categories/:title/
+  - scope:
+      path: '_pages'
+      type: pages
+    values:
+      layout: page
+      permalink: /:title/
+collections:
+  pages:
+    output: true
+    sort_by: order
+    
+exclude:
+  - package.json
+  - Makefile
+  # - postcss.config.js
+  # - tailwind.config.js
+  - yarn.lock

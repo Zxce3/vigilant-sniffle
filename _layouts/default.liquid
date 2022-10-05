@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script type="text/javascript" src="{{ "/assets/js/theme-change.js" | relative_url }}"></script>
+  </head>
+  <body>
+<div class="drawer">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+  <div class="drawer-content flex flex-col">
+    <!-- Navbar -->
+    {% include navbar.liquid %}
+    <!-- Page content here -->
+    {{ content }}
+  </div>
+</div>
+  </body>
+</html>

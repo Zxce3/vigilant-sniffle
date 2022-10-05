@@ -1,0 +1,39 @@
+my:
+  name: Memet
+  bio: "I'm Just Noob"
+  alias: Zxce3
+  region: Indonesian
+  image: 'https://github.com/zxce3.png'
+  freelance: Not Avaliable
+  phone: '+6281315126056'
+  lang: 
+    - Indonesian
+    - English
+    - Spanish
+  social:
+      -
+        type: Github
+        icon: "bi-github"
+        link: "https://github.com/zxce3"
+      -
+        type: Twitter
+        icon: "bi-twitter"
+        link: "https://twitter.com/zxce3_"
+      -
+        type: Telegram
+        icon: "bi-telegram"
+        link: "https://t.me/zxce3" 
+      -
+        type: Linkedin
+        icon: "bi-linkedin"
+        link: "https://www.linkedin.com/in/mettzx/"
+  data:
+    - 
+      title: About
+      content: "I'm a developer based in Indonesia with around 3 years experience, and sometimes obsessed with the project I'm working on, I like to learn new things and try something different."
+    - 
+      title: Interest
+      content: "I'm interested in linux, UX, git and automation software. Other interests include relaxing music, drawing, and history (especially non-mainstream theory)."
+    -
+      title: Contact
+      content: "Contact me via email <a href='mailto:memetpea25@gmail.com'>memetpea25@gmail.com</a> or directly on telegram <a href='https://t.me/zxce3'>@Zxce3</a>"
