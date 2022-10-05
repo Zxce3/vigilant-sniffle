@@ -2,13 +2,16 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html class="dark [--scroll-mt:9.875rem] lg:[--scroll-mt:6.3125rem] js-focus-visible" lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <script type="text/javascript" src="{{ "/assets/js/theme-change.js" | relative_url }}"></script>
+    {% if page.layout == 'home' %}
+    <script type="text/javascript" src="{{ "/assets/js/typer.js" | relative_url }}"></script>
+    {% endif %}
   </head>
   <body>
 <div class="drawer">
@@ -18,6 +21,7 @@ layout: compress
     {% include navbar.liquid %}
     <!-- Page content here -->
     {{ content }}
+    {% include footer.liquid %}
   </div>
 </div>
   </body>
