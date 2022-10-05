@@ -1,0 +1,20 @@
+
+{% assign _content = include.content %}
+
+{% if _content contains '<img src="' %}
+
+  {% if site.img_cdn != '' %}
+    {% assign img_path_replacement = '<img src="' | append: site.img_cdn | append: '/' %}
+  {% else %}
+    {% assign img_path_replacement = '<img src="' | append: site.baseurl | append: '/' %}
+  {% endif %}
+
+  {% assign _content = _content | replace: '<img src="/', img_path_replacement %}
+
+  {% assign _content = _content | replace: '<img ', '<img class="rounded-lg justify-center"'  %}
+  {% assign _content = _content | replace: '<p><img ', '<p class="relative not-prose my-[2em] first:mt-0 last:mb-0 rounded-lg overflow-hidden"><img '  %}
+
+{% endif %}
+
+<!-- return -->
+{{ _content }}
