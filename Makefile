@@ -25,7 +25,10 @@ build:
 	export JEKYLL_ENV=production
 	export NODE_ENV=production
 	@bundle exec jekyll build --safe --profile
-
+gh-pages:
+	export JEKYLL_ENV=production
+	export NODE_ENV=production
+	@bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --profile	
 server:
 	@bundle exec jekyll server --safe --livereload
 s:
