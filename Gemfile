@@ -5,4 +5,5 @@ gem "jekyll", "~> 4.2"
 # Jekyll Plugins
 group :jekyll_plugins do
 gem "jekyll-postcss", "~> 0.5.0"
+gem 'jekyll-octicons'
 end
