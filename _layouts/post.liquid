@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="">
+<div class="px-4 sm:px-6 md:px-8">
     <div class="max-w-8xl mx-auto">
         <div class="flex px-4 pt-8 pb-10 lg:px-8">
             <a class="group flex font-semibold text-sm leading-6 text-primary-focus-700 hover:text-primary-focus-900 dark:text-primary-focus-200 dark:hover:text-white" href="/blog">
@@ -24,8 +24,8 @@ layout: default
                             <dd class="absolute top-0 inset-x-0 text-primary-focus-700 dark:text-primary-focus-400"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></dd>
                         </dl>
                     </div>
-<div class="mt-12 prose prose-slate dark:prose-invert">
-	{{ content }}
+<div class="mt-12 max-w-3xl prose prose-slate dark:prose-invert">
+	{% include content.liquid content=content %}
 </div>
 </article>
             </main>
