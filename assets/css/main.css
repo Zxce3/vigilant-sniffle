@@ -1,7 +1,10 @@
 ---
+# Basic style
 ---
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@charset "utf-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
