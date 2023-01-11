@@ -2,6 +2,8 @@
 
 This is a starter template for Jekyll and Tailwind CSS with Daisy UI.
 
+---
+
 ## Installation
 
 1. Clone the repo
