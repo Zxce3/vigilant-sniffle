@@ -1,5 +1,5 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://zxce3.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/vigilant-sniffle" # the subpath of your site, e.g. /blog
 title: "My Profile" # the name of your site, e.g. ACME Corp.
 postcss:
   cache: false
@@ -29,6 +29,6 @@ collections:
 exclude:
   - package.json
   - Makefile
-  # - postcss.config.js
-  # - tailwind.config.js
+  - postcss.config.js
+  - tailwind.config.js
   - yarn.lock
