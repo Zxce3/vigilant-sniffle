@@ -5,7 +5,6 @@
   "main": "index.js",
   "author": "zxce3",
   "license": "MIT",
-  
   "dependencies": {
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.12",
@@ -13,8 +12,5 @@
     "daisyui": "^2.31.0",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8"
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
