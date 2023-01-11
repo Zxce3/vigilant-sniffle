@@ -20,3 +20,7 @@ this is zxce3:
 ```bash
 export ENV=ENV-NAME
 ```
+
+```python
+import pandas as pd
+```

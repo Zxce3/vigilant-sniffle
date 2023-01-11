@@ -13,7 +13,25 @@
 
   {% assign _content = _content | replace: '<img ', '<img class="rounded-lg justify-center"'  %}
   {% assign _content = _content | replace: '<p><img ', '<p class="relative not-prose my-[2em] first:mt-0 last:mb-0 rounded-lg overflow-hidden"><img '  %}
-
+  
+{% endif %}
+{% if _content contains '<div class="highlight">' %}
+  {% capture winds %}
+  <div class="mockup-code">
+      {% endcapture %}
+      {% assign _content = _content
+      | replace: '<div class="highlight">', winds
+      | replace: '</pre></div>', '</pre></div>'
+  %}
+  {% endif %}
+  {% if _content contains '<figure class="highlight">' %}  
+{% capture winds %}
+  <div class="mockup-code">
+{% endcapture %}
+  {% assign _content = _content 
+  | replace: '<figure class="highlight">', winds
+  | replace: '</pre></figure>', '</pre></div>'
+    %}
 {% endif %}
 
 <!-- return -->
